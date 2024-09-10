@@ -11,7 +11,7 @@ const errorExit = document.getElementById("error-exit");
 const searchUrl = new URL(window.location.href);
 const separatorSymbol = searchUrl.searchParams.get("sep") || ",";
 const coefficientsString = searchUrl.searchParams.get("coefficients");
-let coefficients = [1.05, 1.73, 5.72, 3.01, 4.40, 1.25, 1.89, 3.91, 2.92, 1.3, 1.09, 23.50];
+let coefficients = [1.13, 1.73, 2.72, 1.89, 3.40, 1.80, 1.99, 2.27, 3.92, 1.36, 1.23, 3.39];
 
 let currentSignalIndex = 0;
 
@@ -38,7 +38,7 @@ getSignal.onclick = function () {
     }
 
     printSignal.classList.remove("deactivate");
-    const reloadSeconds = 15;
+    const reloadSeconds = 25;
     goTimer(reloadSeconds);
     getSignal.disabled = true;
 }
